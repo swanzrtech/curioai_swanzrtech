@@ -237,7 +237,7 @@ class FormHandler {
         const proposalPath = '/Curioai_proposal.pdf';
         const link = document.createElement('a');
         link.href = proposalPath;
-        link.download = 'CurioAI_YC_Proposal.pdf';
+        link.download = 'CurioAI_Proposal.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
