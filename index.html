@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curio AI by Swanzr Tech - Real-Time Monitoring & AI-Powered Summaries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="gradient-bg min-h-screen overflow-x-hidden">
+    <!-- Floating Background Elements -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+        <div class="floating-orb absolute top-20 left-10 w-32 h-32 gradient-purple rounded-full opacity-20"></div>
+        <div class="floating-orb absolute top-40 right-20 w-24 h-24 gradient-pink rounded-full opacity-25 delayed-animation-2s"></div>
+        <div class="floating-orb absolute bottom-40 left-1/4 w-40 h-40 gradient-blue rounded-full opacity-15 delayed-animation-4s"></div>
+        <div class="floating-orb absolute bottom-20 right-1/3 w-28 h-28 gradient-green rounded-full opacity-20 delayed-animation-6s"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                   
+                    <div>
+                        <span class="text-2xl font-bold gradient-text">SWANZR TECH</span>
+                        <br>
+                        <span class="text-sm text-gray-500">  Built for What's Next.</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link-premium text-gray-700 hover:text-purple-600 font-medium transition-all duration-500 relative group px-4 py-2 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 hover:shadow-lg transform hover:-translate-y-1">
+                        About
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500 group-hover:w-3/4 transform -translate-x-1/2 rounded-full"></span>
+                        <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500"></span>
+                    </a>
+                    <a href="#solution" class="nav-link-premium text-gray-700 hover:text-purple-600 font-medium transition-all duration-500 relative group px-4 py-2 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 hover:shadow-lg transform hover:-translate-y-1">
+                        Solution
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500 group-hover:w-3/4 transform -translate-x-1/2 rounded-full"></span>
+                        <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500"></span>
+                    </a>
+                    <a href="#roadmap" class="nav-link-premium text-gray-700 hover:text-purple-600 font-medium transition-all duration-500 relative group px-4 py-2 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 hover:shadow-lg transform hover:-translate-y-1">
+                        Roadmap
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500 group-hover:w-3/4 transform -translate-x-1/2 rounded-full"></span>
+                        <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500"></span>
+                    </a>
+                    <a href="team.html" class="nav-link-premium text-gray-700 hover:text-purple-600 font-medium transition-all duration-500 relative group px-4 py-2 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 hover:shadow-lg transform hover:-translate-y-1">
+                       Our Team 
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500 group-hover:w-3/4 transform -translate-x-1/2 rounded-full"></span>
+                        <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 to-pink-500/0 group-hover:from-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500"></span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 relative cyber-grid">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-block px-4 py-2 glass-card rounded-full">
+                            <span class="mono text-sm gradient-text font-medium">✨ AI-POWERED INTELLIGENCE</span>
+                        </div>
+                        <h1 class="text-6xl lg:text-7xl font-bold leading-tight">
+                            <span class="holographic">CURIO AI</span>
+                            <br>
+                            <span class="text-gray-800 text-shadow">Turning Information Chaos into Real-Time Clarity</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 leading-relaxed max-w-lg">
+                            The only platform that transforms global information overload into actionable intelligence, delivered instantly with AI-powered summaries and sentiment analysis.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-futuristic text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2">
+                            <span>Join the Swanzr Waitlist</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </button>
+                        <button class="download-proposal-btn glass-card text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover-lift flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            <span>Download Swanzr Proposal</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative flex justify-center items-center h-96 lg:h-[500px]">
+                    <!-- Dashboard mockup -->
+                    <div class="glass-card w-full h-auto rounded-3xl flex flex-col p-6 relative z-10 neon-glow">
+                        <div class="text-lg font-bold gradient-text mb-4">Curio AI Dashboard</div>
+                        <div class="space-y-4">
+                            <div class="alert-item positive glass-card p-4 rounded-lg">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="mono text-gray-500">2 min ago</span>
+                                    <span class="mono font-bold text-green-500">POSITIVE</span>
+                                </div>
+                                <p class="text-gray-800">Major tech acquisition announced - market sentiment bullish</p>
+                            </div>
+                            
+                            <div class="alert-item neutral glass-card p-4 rounded-lg">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="mono text-gray-500">5 min ago</span>
+                                    <span class="mono font-bold text-blue-500">NEUTRAL</span>
+                                </div>
+                                <p class="text-gray-800">Regulatory changes in fintech sector - compliance updates required</p>
+                            </div>
+                            
+                            <div class="alert-item critical glass-card p-4 rounded-lg">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="mono text-gray-500">8 min ago</span>
+                                    <span class="mono font-bold text-red-500">CRITICAL</span>
+                                </div>
+                                <p class="text-gray-800">Security vulnerability discovered in popular framework</p>
+                            </div>
+                            
+                            <div class="alert-item positive glass-card p-4 rounded-lg">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="mono text-gray-500">Just now</span>
+                                    <span class="mono font-bold text-green-500">POSITIVE</span>
+                                </div>
+                                <p class="text-gray-800">Tesla announces breakthrough in battery technology, extending range by 50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="morphing-shape w-80 h-80 gradient-purple opacity-20 absolute"></div>
+                    <div class="morphing-shape w-60 h-60 gradient-pink opacity-30 absolute delayed-animation-3s"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Curio AI Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 glass-card rounded-full mb-6">
+                    <span class="mono text-sm gradient-text font-medium">� WHAT IS CURIO AI?</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6">
+                    <span class="gradient-text">Real-Time</span> <span class="text-gray-800">Intelligence Platform</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Curio AI is a real-time monitoring and alert platform that distills global news, social media, blogs, and forums into concise, AI-powered summaries with sentiment tags. It ensures you never miss critical updates that drive decisions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-purple transition-all duration-300">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Real-Time Monitoring</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        24/7 scanning across thousands of global sources to ensure you never miss crucial information.
+                    </p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-pink transition-all duration-300">
+                        <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">AI Summaries</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Intelligent insights distilled into actionable intelligence, making complex information instantly understandable.
+                    </p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-blue transition-all duration-300">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Sentiment Analysis</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Emotional context and impact assessment for every update, helping you understand the implications instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Information Crisis Section -->
+    <section class="py-20 relative bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 glass-card rounded-full mb-6">
+                    <span class="mono text-sm gradient-text font-medium">⚠️ THE INFORMATION CRISIS</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6 text-gray-800">
+                    <span>Drowning in Information,</span>
+                    <br>
+                    <span class="gradient-text">Starving for Clarity</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The world is drowning in information but starving for clarity. Professionals spend hours filtering endless feeds, missing key insights that can make or break their next move.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="glass-card rounded-3xl p-8 text-center">
+                    <div class="stat-number mb-2" data-value="2500000">2.5M</div>
+                    <p class="text-gray-600 mono uppercase text-sm">2.5M Articles Published Daily</p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 text-center">
+                    <div class="stat-number mb-2" data-value="4">4</div>
+                    <p class="text-gray-600 mono uppercase text-sm"> 4+ Hours Wasted Filtering</p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 text-center">
+                    <div class="stat-number mb-2" data-value="85">85%</div>
+                    <p class="text-gray-600 mono uppercase text-sm">85% Miss Key Updates</p>
+                </div>
+            </div>
+            
+            <div class="glass-card rounded-3xl p-8">
+                <div class="text-center mb-8">
+                    <p class="text-gray-600 mb-4">Existing tools are slow, email-based, or priced for enterprises only—leaving startups and individuals powerless.</p>
+                </div>
+                
+                <div class="flex overflow-x-auto space-x-4 py-4 mb-8 scrollbar-hide">
+                    <div class="glass-card rounded-xl p-4 flex-shrink-0 w-72 border-l-4 border-red-400">
+                        <p class="text-gray-800 mono text-sm">Breaking: Market volatility increases...</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex-shrink-0 w-72 border-l-4 border-blue-400">
+                        <p class="text-gray-800 mono text-sm">Tech startup raises $50M in Series B...</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex-shrink-0 w-72 border-l-4 border-yellow-400">
+                        <p class="text-gray-800 mono text-sm">Regulatory changes affect compliance...</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex-shrink-0 w-72 border-l-4 border-green-400">
+                        <p class="text-gray-800 mono text-sm">New AI breakthrough announced...</p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl">
+                        <div class="glass-card rounded-xl p-4 bg-green-50">
+                            <p class="text-green-800 font-semibold">→ Market opportunity in fintech sector</p>
+                        </div>
+                        <div class="glass-card rounded-xl p-4 bg-yellow-50">
+                            <p class="text-yellow-800 font-semibold">→ Compliance update required by Q2</p>
+                        </div>
+                        <div class="glass-card rounded-xl p-4 bg-red-50">
+                            <p class="text-red-800 font-semibold">→ Competitive threat in AI space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 glass-card rounded-full mb-6">
+                    <span class="mono text-sm gradient-text font-medium">💡 INTRODUCING CURIO AI</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6">
+                    <span class="gradient-text">Comprehensive</span> <span class="text-gray-800">Solution</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The comprehensive solution that transforms information chaos into strategic advantage
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-purple transition-all duration-300">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Real-Time Monitoring</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        24/7 scanning of news, social media, blogs, and forums across global sources
+                    </p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-pink transition-all duration-300">
+                        <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">AI-Summarized Alerts</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        One-line insights that capture the essence of complex information, instantly
+                    </p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-blue transition-all duration-300">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Sentiment Analysis</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Positive, negative, and neutral tags with emotional context and impact assessment
+                    </p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-green transition-all duration-300">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Smart Filtering</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Customize what matters with intelligent filtering and noise reduction
+                    </p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 hover-lift feature-card">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:gradient-purple transition-all duration-300">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Deep Dive Access</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        One-click access to full source articles and comprehensive context
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Validation & Traction Section -->
+    <section class="py-20 relative bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 glass-card rounded-full mb-6">
+                    <span class="mono text-sm gradient-text font-medium">📈 EARLY INTEREST & VALIDATION</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6 text-gray-800">
+                    <span class="gradient-text">Strong Market</span> <span>Validation</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Strong market validation and growing momentum
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-3xl p-8 text-center">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto gradient-purple">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number mb-2" data-value="120">0</div>
+                    <p class="text-gray-600 font-bold">Hours of Research & Exploration</p>
+                    <p class="text-gray-500 text-sm">Dedicated time spent studying AI trends, user pain points, and market gaps shaping Curio AI</p>
+                </div>
+                <div class="glass-card rounded-3xl p-8 text-center">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto gradient-pink">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number mb-2" data-value="50">0</div>
+                    <p class="text-gray-600 font-bold">Discussions & Feedback Sessions</p>
+                    <p class="text-gray-500 text-sm">Conversations with peers, mentors, and professionals to validate the direction and refine the vision</p>
+                </div>
+                <div class="glass-card rounded-3xl p-8 text-center">
+                    <div class="service-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto gradient-blue">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number mb-2" data-value="10+">0</div>
+                    <p class="text-gray-600 font-bold">Applications & Opportunities Pursued</p>
+                    <p class="text-gray-500 text-sm">Building connections and exploring opportunities to shape the future of Curio AI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 glass-card rounded-full mb-6">
+                    <span class="mono text-sm gradient-text font-medium">🗺️ NEXT MILESTONES</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6">
+                    <span class="text-gray-800">Our Path to</span> <span class="gradient-text">Market Leadership</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Strategic roadmap for building and launching Curio AI
+                </p>
+            </div>
+            <div class="relative pl-10 md:pl-0">
+                <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-400 to-pink-500 md:hidden"></div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass-card rounded-3xl p-8 hover-lift roadmap-item">
+                        <div class="mono text-sm text-purple-600 font-bold mb-4">Q4 2025</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">MVP Completion</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Core platform with real-time monitoring and AI summarization
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-3xl p-8 hover-lift roadmap-item">
+                        <div class="mono text-sm text-pink-600 font-bold mb-4">Q1 2026</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Beta Launch</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Limited release to strategic partners and early adopters
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-3xl p-8 hover-lift roadmap-item">
+                        <div class="mono text-sm text-blue-600 font-bold mb-4">Q3 2026</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Public Release</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Full market launch with enterprise and individual tiers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <div class="inline-block px-4 py-2 glass-card rounded-full">
+                            <span class="mono text-sm gradient-text font-medium">👋 MEET OUR FOUNDER</span>
+                        </div>
+                        <h2 class="text-5xl font-bold">
+                            <span class="text-gray-800">Raswanthkrishna</span>
+                            <br>
+                            <span class="gradient-text">Founder</span>
+                        </h2>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            Founder of Swanzr Tech and the visionary behind Curio AI. With a deep interest in AI and problem-solving, he is focused on building technology that makes information clearer and more actionable for everyone.
+                        </p>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            His journey is driven by a simple belief: better clarity leads to better decisions.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold gradient-text">Growing Journey</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Right now, Curio AI is led solely by its founder, but the vision is clear: to build a world-class team of engineers, researchers, and creators who share the same belief in making AI meaningful, human-centric, and future-proof.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative flex justify-center items-center h-96 lg:h-[600px]">
+                    <div class="glass-card w-80 h-80 rounded-3xl flex items-center justify-center relative z-10 neon-glow">
+                        <div class="text-center space-y-6">
+                            <div class="relative">
+                                <div class="w-20 h-20 gradient-purple rounded-3xl mx-auto flex items-center justify-center">
+                                    <span class="text-3xl font-bold text-white holographic">RM</span>
+                                </div>
+                                <div class="absolute inset-0 w-20 h-20 gradient-purple rounded-3xl mx-auto opacity-50 pulse-ring"></div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold gradient-text mb-2">Swanzr Tech</div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="morphing-shape w-96 h-96 gradient-blue opacity-10 absolute"></div>
+                    <div class="morphing-shape w-64 h-64 gradient-green opacity-15 absolute delayed-animation-4s"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 glass-card rounded-full mb-6">
+                    <span class="mono text-sm gradient-text font-medium">💬 READY TO CUT THROUGH THE NOISE?</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6">
+                    <span class="text-gray-800">Join Us in</span> <span class="gradient-text">Transforming</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Join us in transforming how the world consumes information
+                </p>
+            </div>
+            
+            <div class="glass-card rounded-3xl p-8 md:p-12 neon-glow">
+                <form id="contactForm" class="space-y-8">
+                   
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 cyber-grid opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 gradient-purple rounded-xl flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">C</span>
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold">Curio AI</span>
+                            <div class="text-xs mono text-gray-400">by Swanzr Tech</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Turning Information Chaos into Real-Time Clarity
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/swanzrtech" class="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:gradient-purple transition-all group shadow-md hover:shadow-xl" title="Follow us on Twitter">
+                            <svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/swanzr-tech-98b013378" class="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:gradient-purple transition-all group shadow-md hover:shadow-xl" title="Connect on LinkedIn">
+                            <svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 mono text-sm">
+                    &copy; 2025 Swanzr Tech. All rights reserved.
+                </p>
+                <div class="mt-4">
+                    <div class="inline-block">
+                        <span class="text-xl font-bold text-white">SWANZR</span>
+                        <span class="text-gray-400 text-sm ml-2">Built for What's Next.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/loading.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Initialize once page is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // This will be executed after the loading screen is completed
+        });
+    </script>
+</body>
+</html>
