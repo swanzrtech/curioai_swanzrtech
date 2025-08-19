@@ -233,3 +233,32 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.animate-on-scroll, .stat-number, .glass-card, .roadmap-item, .feature-card').forEach(el => {
     observer.observe(el);
 });
+
+function showFuturisticToast(message) {
+    let toast = document.createElement('div');
+    toast.className = 'futuristic-toast fixed top-8 left-1/2 transform -translate-x-1/2 z-50 px-8 py-5 rounded-2xl shadow-2xl text-white text-lg font-semibold bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 backdrop-blur-xl border border-white/20 animate-fade-in';
+    toast.innerHTML = `<span class='block text-xl font-bold tracking-wide mb-1'>🚀 Waitlist Update</span><span class='block text-base font-medium'>${message}</span>`;
+    document.body.appendChild(toast);
+    setTimeout(() => {
+        toast.classList.add('animate-fade-out');
+        setTimeout(() => toast.remove(), 800);
+    }, 3500);
+}
+
+// Waitlist button click handler
+const waitlistBtn = document.querySelector('.btn-futuristic');
+if (waitlistBtn) {
+    waitlistBtn.addEventListener('click', function() {
+        showFuturisticToast("We will notify you when our waitlist opens.<br><span class='text-pink-200'>Stay tuned for the future of information clarity.</span> <span class='text-blue-200 font-bold'>Something fresh and new is coming soon.</span>");
+    });
+}
+
+// Toast animation styles
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes fadeInToast { from { opacity: 0; transform: translateY(-30px) scale(0.95); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes fadeOutToast { from { opacity: 1; } to { opacity: 0; transform: translateY(-30px) scale(0.95); } }
+.futuristic-toast.animate-fade-in { animation: fadeInToast 0.7s cubic-bezier(.77,0,.18,1); }
+.futuristic-toast.animate-fade-out { animation: fadeOutToast 0.8s cubic-bezier(.77,0,.18,1) forwards; }
+`;
+document.head.appendChild(style);
