@@ -54,7 +54,7 @@ function setupDownloadButton() {
             setTimeout(() => {
                 // Create a hidden link to download the file
                 const link = document.createElement('a');
-                link.href = 'Curio_AI_Proposal.pdf'; // Path to your PDF file
+                link.href = 'CurioAI_Proposal.pdf'; // Path to your PDF file
                 link.download = 'Curio_AI_by_Swanzr_Tech_Proposal.pdf';
                 document.body.appendChild(link);
                 link.click();
