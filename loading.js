@@ -102,7 +102,7 @@
                 loadingTexts.length - 1
             );
             loadingText.textContent = loadingTexts[textIndex];
-        }, 500); // Reduce interval time
+        }, 340); // Reduce interval time
     }
     
     // Hide loading screen
